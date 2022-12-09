@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<table border="1">
+  <tr>
+    <th>seq</th>
+    <th>id</th>
+    <th>pw</th>
+  </tr>
+  <tr th:each="i : ${list}">
+    <td th:text="${i.seq}"></td>
+    <td th:text="${i.id}"></td>
+    <td th:text="${i.pw}"></td>
+  </tr>
+</table>
+</body>
+</html>
