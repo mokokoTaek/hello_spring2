@@ -27,7 +27,6 @@ public class MemberController {
     public String singup(Member member) {
 
         Member meberSave = sdjr.save(member);
-
         return "sigupClear";
     }
 
